@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Mentoria-form</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            <br>
+            <p>
+                Preencha o formulário abaixo para <br>
+                agendar a sua mentoria
+            </p>
+
+        </header>
+
+        <form id="mentory-form" method="" action="">
+            <fieldset>
+
+                <legend>Informações pessoais</legend>
+
+                <div class="input-flexbox">
+
+                    <div class="input-box">
+                        <label for="usur-name">Nome</label>
+                        <input type="text" name="user-name" id="user-name"/>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="surname">Sobrenome</label>
+                        <input type="text" name="surname" id="surname"/>
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+                    <label for="user-email">
+                        Email <span>(digite um email válido)</span>
+                    </label>
+                    <input type="email" name="user-email" id="user-email"/>
+                </div>
+
+                <div class="input-box">
+                    <label for="user-password">
+                        Senha <span>(mínimo de 6 caracteres)</span>
+                    </label>
+                    <input  minlength="6" type="password" name="user-password" id="user-password"/>
+                   
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do mentor</legend>
+
+                <div class="input-box">
+                    <label for="mentor-name">
+                        Nome do seu mentor <span>(só o primeiro nome)</span>
+                    </label>
+                    <input 
+                    type="text" 
+                    name="mentor-name" 
+                    id="mentor-name" />
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Seus horários disponíveis</legend>
+
+               <h2>Primeira mentoria</h2>
+
+                <div class="col-3">
+
+                     <div class="input-box">
+                        <label for="date-mentoring">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="date-mentoring" id="date-mentoring"/>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="beguin-event">Das</label>
+                        <input type="time" name="beguin-event" id="beguin-event"/>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="end-event">Até</label>
+                        <input type="time" name="end-event" id="end-event"/>
+                    </div>
+
+                </div>
+
+                <h2>Segunda mentoria</h2>
+                
+                <div class="col-3">
+
+                     <div class="input-box">
+                         <label for="date-mentoring">Data <span>(DD/MM/AAAA)</span> </label>
+                         <input type="date" name="date-mentoring" id="date-mentoring"/>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="beguin-event">Das</label>
+                        <input type="time" name="beguin-event" id="beguin-event"/>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="end-event">Até</label>
+                        <input type="time" name="end-event" id="end-event"/>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+        </form>
+
+        <footer>
+            <input 
+            form="mentory-form"
+            type="submit" 
+            class="button"
+            value="salvar"/>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
